@@ -9,6 +9,9 @@ import routerProviders from "./providers/routerProviders.js"; //PROVIDERS
 import connection from "./config/bd.js"; // CONNECTION OF DB
 import logger from "./config/logger.js"; // LOGGER
 import morgan from "morgan";
+//SWAGGER DOC
+import swaggerUi from "swagger-ui-express"
+import swDocument from "./config/openapi.js"
 
 //Start express server
 const app = express();
@@ -25,9 +28,12 @@ await connection();
 // ENDPOINTS
 app.use('/article', routerArticles); //ENDPOINT ARTICLES
 app.use('/provider', routerProviders); //ENDPOINT PROVIDERS
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swDocument)); //SWAGGER
 
 // HOW TO SERVER UP IN EXPRESS
 app.set("port", process.env.SERVER_PORT || 5000);
 app.listen(app.get("port"), () => { 
     logger.info("Server up at " + process.env.SERVER_PORT);
 })
+
+export default app;

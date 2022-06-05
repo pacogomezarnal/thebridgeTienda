@@ -7,7 +7,7 @@ const Schema = new mongoose.Schema({
     relevancia: Number,
     precio: {type: Number, required: true },
     //image: String,
-    provider: { type: mongoose.Schema.Types.ObjectId, ref:"Provider"},
+    provider: { type: mongoose.Schema.Types.ObjectId, ref:"Providers"},
 });
 const Articles = mongoose.model('Articles', Schema);
 export default Articles;

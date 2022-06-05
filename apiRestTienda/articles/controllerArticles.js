@@ -6,7 +6,7 @@ import mongoose from "mongoose";
 const getArticlebyId = async (req,res) => {
     try{
         const _id = mongoose.Types.ObjectId(req.params.id);
-        const article = await Articles.findById(_id);
+        const article = await Articles.findById(_id).populate('provider');
         res.json(article);
     }catch(error){
         console.log("error");

@@ -16,7 +16,7 @@ function Barra() {
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                         <li class="nav-item"><Link to="/" class="nav-link active text-white">Articulos</Link></li>
-                        <li class="nav-item"><Link to="proveedores" class="nav-link text-white">Proveedores</Link></li>
+                        <li class="nav-item"><Link to="/proveedores" class="nav-link text-white">Proveedores</Link></li>
                     </ul>
                     <span class="navbar-text text-white">
                         Usuario: pacogomez
