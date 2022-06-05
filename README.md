@@ -52,6 +52,8 @@
       <a href="#about-the-project">Sobre el proyecto</a>
       <ul>
         <li><a href="#built-with">Construido con</a></li>
+        <li><a href="#backend">Backend</a></li>
+        <li><a href="#frontend">Frontend</a></li>
       </ul>
     </li>
     <li>
@@ -74,19 +76,16 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+<div align="center">
+  <img src="frontTienda/public/screen_tienda01.png" alt="Tienda">
+</div>
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+Con este pequeño desarrollo se pretende resolver el ejercicio práctico planteado por la escuela <a href="https://www.thebridge.tech/">TheBridge</a>. Se plantea el reto de escribir una aplicación que permita manejar un conjunto de artículos almacenados en una base de datos y relacionados con un proveedor.
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Para ello:
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+* Se desarrolla un ApiRestFul que permitirá la interacción con la base de datos
+* Se desarrolla un FrontEnd que se comunicará con el Backend para presentar la información
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -94,52 +93,61 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+En esta sección se listan de una forma general todos los frameworks/tecnologías usados dentro del proyecto, sin presentar plugins o librerías menores:
 
-* [Next.js](https://nextjs.org/)
 * [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
+* [Node](https://nodejs.dev/)
+* [Express](https://expressjs.com/)
+* [MongoDB](https://www.mongodb.com/)
 * [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+### Backend
+
+El backend se desarrolla con las tecnologías Node&Express para la realización de los siguientes endpoints que se pueden consultar a través de la ruta 'http://localhost:8000/api-docs/' una vez instalado y lanzado el proyecto.
+<div align="center">
+  <img src="frontTienda/public/screen_api01.png" alt="Tienda">
+</div>
+
+### FrontEnd
+
+El FrontEnd realizado con tecnología React permite comunicarse con el Backend a partir de esos cuatro endpoints desarrollados
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+En los siguientes apartados se detalla el paso a paso para la correcta puesta en marcha del proyecto.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Es necesario para el correcto funcionamiento de la aplicación y cada una de sus partes tener instalado:
+
+* MongoDB
+* NPM
+* Node
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+El proyecto puede ser ejecutado de forma local realizando los siguientes pasos:
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+1. descarga desde el repositorio https://github.com/pacogomezarnal/thebridgeTienda
+2. instalación de backend
+  cd apiRestTienda
+  npm install
+3. instalación de frontend
+  cd frontTienda
+  npm install
+4. migración de datos a la base de datos MongoDB.
+  cd apiRestTienda
+  npm run data
+5. ejecución
+  cd apiRestTienda
+  npm run start
+  cd frontTienda
+  npm run start
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
