@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/pacogomezarnal/thebridgeTienda">
-    <img src="frontTienda/public/logo_thebridge.svg" alt="LogoTheBridge" width="80" height="80">
+    <img src="frontTienda/public/logo_thebridge.svg" alt="LogoTheBridge">
   </a>
 
   <h3 align="center">Ejercicio práctico TheBridge</h3>
