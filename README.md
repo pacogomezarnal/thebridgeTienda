@@ -49,23 +49,23 @@
   <summary>Contenido</summary>
   <ol>
     <li>
-      <a href="#about-the-project">Sobre el proyecto</a>
+      <a href="#sobre-el-proyecto">Sobre el proyecto</a>
       <ul>
-        <li><a href="#built-with">Construido con</a></li>
+        <li><a href="#construido-con">Construido con</a></li>
         <li><a href="#backend">Backend</a></li>
         <li><a href="#frontend">Frontend</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Comenzando</a>
+      <a href="#comenzando">Comenzando</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisitos</a></li>
-        <li><a href="#installation">Instalación</a></li>
+        <li><a href="#prerequisitos">Prerequisitos</a></li>
+        <li><a href="#instalacion">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Uso</a></li>
+    <li><a href="#uso">Uso</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contact">Contacto</a></li>
+    <li><a href="#contacto">Contacto</a></li>
   </ol>
 </details>
 
@@ -125,7 +125,7 @@ Es necesario para el correcto funcionamiento de la aplicación y cada una de sus
 * NPM
 * Node
 
-### Installation
+### Instalacion
 
 El proyecto puede ser ejecutado de forma local realizando los siguientes pasos:
 
@@ -190,6 +190,7 @@ Abriendo en un navegador en el puerto  3000, de forma local podemos navegar por 
 - [x] Creado frontend
 - [x] Creada naveción de frontend
 - [x] Creado prueba unitaria de frontend
+- [ ] Crear contenedores con Docker
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -202,7 +203,9 @@ Abriendo en un navegador en el puerto  3000, de forma local podemos navegar por 
 ## Contacto
 
 Paco Gómez  LinkedIn - [LinkedIn](https://www.linkedin.com/in/paco-gomez-arnal/) - paco.gomez.arnal@gmail.com
+<br/>
 Paco Gómez Youtube - [Youtube](https://www.youtube.com/c/PacoGomez)
+<br/>
 
 Project Link: [https://github.com/pacogomezarnal/thebridgeTienda](https://github.com/pacogomezarnal/thebridgeTienda)
 
